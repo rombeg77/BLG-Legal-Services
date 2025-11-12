@@ -26,6 +26,8 @@ jobs:
       
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: 'BLG-Legal-Services'
       
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
